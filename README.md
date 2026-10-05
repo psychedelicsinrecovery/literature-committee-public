@@ -17,3 +17,6 @@
 - 🌿 **Subcommittees:** 🧱 12 Step Committee · 📖 Book Committee · 📚 ForaPIR (12 Step and Book temporarily sunset now that the books are published; ForaPIR sunset)
 - 🌐 [Literature Committee page](https://service.psychedelicsinrecovery.org/literature-committee/)
 - 📇 **Who's who:** [`CONTACTS.md`](https://github.com/psychedelicsinrecovery/.github/blob/main/CONTACTS.md)
+
+## 🌐 Public lane
+A filtered public copy syncs to [`literature-committee-public`](https://github.com/psychedelicsinrecovery/literature-committee-public) via `.github/workflows/sync-public.yml` (allowlist model from my-template). Public: README.md, publications. Everything else stays private.
