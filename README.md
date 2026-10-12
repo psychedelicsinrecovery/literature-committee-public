@@ -40,5 +40,9 @@ Readers, writers, editors, proofreaders and translators are welcome, and no expe
 This public repository is a filtered copy of LitCom's private working repo, published automatically by an allowlist
 (only this README and `publications/`). Proposals, minutes and committee manuscripts stay private.
 
+## 📄 License
+- 📚 **Everything here is all rights reserved**, see [`LICENSE`](LICENSE). Please ask before reproducing or redistributing.
+- 🏷️ **Names, logos and marks:** see [`TRADEMARKS.md`](TRADEMARKS.md)
+
 <sub>PIR® and Psychedelics In Recovery™ are marks of Psychedelics In Recovery, a 501(c)(3) nonprofit. Please ask
 LitCom before republishing PIR® literature.</sub>
