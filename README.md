@@ -25,7 +25,7 @@ same current versions.
 📖 **Books:** *Psychedelics in Recovery: Medicines, Sacraments and Catalysts* and *The Twelve Steps for Psychedelics in
 Recovery™*: see https://www.psychedelicsinrecovery.org/book/
 
-🗂️ The editable sources (Keynote) sit next to the PDFs in [`publications/`](publications/).
+🗂️ The editable sources (Keynote) sit next to the PDFs in [`publications/`](https://github.com/psychedelicsinrecovery/literature-committee-public/tree/main/publications/2026) on GitHub.
 
 ## 🎫 Requests, corrections and ideas
 - **Found a typo or something outdated?** Open a `/litcom` ticket and quote the page and line.
