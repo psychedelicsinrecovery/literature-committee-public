@@ -1,4 +1,25 @@
+<!-- readme-standard: 2026-11-02 -->
+<div align="center">
+
+<img src="assets/banner.svg" width="100%" alt="PIR's Literature Committee: a twelve-sided form draws itself, for twelve Steps and twelve Traditions.">
+
 # 📜 PIR® Literature Committee (LitCom)
+
+*The canonical home of PIR®'s published literature, so the website, meeting hosts and A.L.E.X. all link to the same current versions.*
+
+![Status](https://img.shields.io/badge/Status-serving-5b2bb5?style=flat-square)
+[![Browse](https://img.shields.io/badge/Browse-the_PDFs-7c3aed?style=flat-square)](https://psychedelicsinrecovery.github.io/literature-committee-public/)
+![For](https://img.shields.io/badge/For-Meetings_and_members-64748b?style=flat-square)
+
+<img src="assets/icons/map-pin.svg" width="16" height="16" alt=""> **You are here:** PIR® › source `literature-committee` (private) → twin `literature-committee-public` (public, listed paths only) · `main` is the working branch
+
+</div>
+
+## <img src="assets/icons/compass.svg" width="24" height="24" alt=""> TL;DR
+
+1. <img src="assets/icons/book-open.svg" width="16" height="16" alt=""> **What this is.** The Steps and Traditions, meeting materials, pamphlets and books, in their current versions.
+2. <img src="assets/icons/users-round.svg" width="16" height="16" alt=""> **Who it is for.** Meeting hosts, members and newcomers, and anyone who wants to serve. No experience is needed.
+3. <img src="assets/icons/footprints.svg" width="16" height="16" alt=""> **Do this first.** [Browse the PDFs](https://psychedelicsinrecovery.github.io/literature-committee-public/). Found a typo? Open a `/litcom` ticket and quote the page and line.
 
 > 🌐 [Literature Committee page](https://service.psychedelicsinrecovery.org/literature-committee/) · 📚 [Browse the PDFs](https://psychedelicsinrecovery.github.io/literature-committee-public/) ·
 > 🎫 Requests or corrections? Type `/litcom` in [PIR®'s Discord](https://discord.gg/MyprTq8w95) or use the [web helpdesk](https://psychedelicsinrecovery.github.io/alex-desk-public/portal.html#litcom)
@@ -38,7 +59,11 @@ Readers, writers, editors, proofreaders and translators are welcome, and no expe
 
 ## 🗄️ The private side
 This public repository is a filtered copy of LitCom's private working repo, published automatically by an allowlist
-(only this README and `publications/`). Proposals, minutes and committee manuscripts stay private.
+(only this README, its pictures in `assets/`, and `publications/`). Proposals, minutes and committee manuscripts stay private.
+
+## <img src="assets/icons/git-pull-request.svg" width="24" height="24" alt=""> Suggest a change
+
+Found a typo or something outdated? Type `/litcom` in [PIR®'s Discord](https://discord.gg/MyprTq8w95) or use the [web helpdesk](https://psychedelicsinrecovery.github.io/alex-desk-public/portal.html#litcom), and quote the page and line. LitCom reads them. Members with access may send a pull request against `main` here, and a person with the role merges; the public mirror takes none.
 
 ## 📄 License
 - 📚 **Everything here is all rights reserved**, see [`LICENSE`](LICENSE). Please ask before reproducing or redistributing.
@@ -46,3 +71,5 @@ This public repository is a filtered copy of LitCom's private working repo, publ
 
 <sub>PIR® and Psychedelics In Recovery™ are marks of Psychedelics In Recovery, a 501(c)(3) nonprofit. Please ask
 LitCom before republishing PIR® literature.</sub>
+
+<sub>The front door follows the living [README standard](https://github.com/drasticstatic/my-template/blob/main/README-STANDARD.md). Copy it, improve it.</sub>
