@@ -12,6 +12,10 @@ A Zoom parking lot is the informal time before or after a scheduled meeting. Com
 - **Conversation getting crowded?** Pause and leave space for others. Don't record, screenshot, or repeat another person's share without permission. If someone keeps disrupting the space or breaks the safety rules, the host may intervene, remove them, or restrict access where possible.
 - **Host needs to go?** If you claimed host, pass it to a willing person before leaving so the room isn't reset. The room usually winds down when the last person leaves. Wrap up sooner if another scheduled meeting needs the Zoom link.
 
+### Before you open the room
+
+If you are hosting, check when the next meeting uses the link and agree who will take over if you need to leave. If nobody can take over and there is a safety concern, close the room rather than leaving it unattended.
+
 ## New to Zoom?
 
 ### Join your first meeting
@@ -20,6 +24,8 @@ A Zoom parking lot is the informal time before or after a scheduled meeting. Com
 2. Enter the name you want others to see. If there's a waiting room, wait for the host to admit you.
 3. Choose **Join Audio** and pick your device audio. Start muted; the camera is optional unless the meeting asks otherwise.
 4. Follow the chair's instructions for sharing. When asked to raise your hand, look under **Reactions**. If you dialed in by phone, use star-9 (\*9) to raise your hand and star-6 (\*6) to mute or unmute.
+
+<!-- pagebreak -->
 
 ### If you can't hear or be heard
 
@@ -40,3 +46,16 @@ For more help, visit [Zoom Concierge](https://chat.whatsapp.com/HU1J7u39MhjLmqbY
 The space is available for informal connection. It's not currently staffed, monitored in real time, or hosting scheduled programming. You can look around without introducing yourself.
 
 For setup questions, ask [PIR® Discord Helper | A.L.E.X. | Astral Logic Endpoint eXpander](https://chat.whatsapp.com/GEw1QrjNalR2kYomziFiJ3?mode=gi_t).
+
+
+### Before you share online
+
+Check the display name and profile photo others can see. Use headphones if someone nearby could overhear. Before posting a screenshot to get tech help, crop out names, meeting details, and chat.
+
+### Choose where to ask for help
+
+- **Something happening now in a Zoom room?** Ask the meeting host privately if you can. You can also mute your audio, turn off your camera, or leave and reconnect at another meeting.
+- **Trouble opening a meeting or getting audio to work?** Ask Zoom Concierge. Say what device you use and what you see on screen, but leave out anyone else's name, chat messages, or recovery details.
+- **Need help with a Discord channel or audio setting?** Ask Discord Helper. For a public text channel, check who can see it before posting. If you prefer not to get direct messages from server members, review your Discord privacy settings.
+
+A parking lot and Discord are both optional. If you want a scheduled meeting rather than informal chat, use the [online meetings list](https://www.psychedelicsinrecovery.org/online-meetings/).
