@@ -20,7 +20,7 @@ SKIP={'parking-lot','new-to-zoom','new-to-discord'}   # folded into staying-conn
 # slug: (base font size, target pages, all-caps headings centered?)
 SPEC={'faq':(12.2,4,False,1.24,.53,1.5),'cares-and-considerations':(12.25,4,True,1.12,.33,1.5),'netiquette':(11.4,1,False,1.10,.40,1.5),
       'twelve-steps':(11.5,1,False,1.18,.39,1.35),'twelve-traditions':(11.5,1,False,1.18,.39,1.35),
-      'meeting-script':(11.5,2,False,1.16,.42,1.4),'safety-guidelines':(12.4,1,False,1.23,.55,1.37),'sponsorship-and-co-travel':(12.4,1,False,1.23,.55,1.25),
+      'meeting-script':(11.5,2,False,1.16,.42,1.4),'safety-guidelines':(12.4,1,False,1.23,.55,1.37),'sponsorship-and-co-travel':(12.4,1,False,1.23,.55,1.3),
       'preamble':(14,1,False,1.30,.85,1.65),'guiding-principles':(14,1,False,1.30,.85,1.65),
       'integration-and-a-plan-of-action':(13,1,False,1.30,.75,1.6),
       'staying-connected':(11.6,2,False,1.22,.47,1.25),'sponsorship-review':(11.5,None,False,1.24,.53,1.5)}
@@ -125,5 +125,27 @@ def render(p):
  assert emit(scale,total)==total
  (O/f'{slug}-count.pdf').unlink(missing_ok=True)
  print(slug,'pages',total,'scale',round(scale,2),'bannerH',round(BANNER_H,1))
+def render_two(md):
+ part1,part2=md.read_text().split('<!-- pagebreak -->')
+ t1=(B/'source'/'.p1.md'); t1.write_text(part1.strip()); SPEC[t1.stem]=(15.748,1,False,1.23,.55,1.0); render(t1); t1.unlink()
+ from reportlab.platypus import PageBreak,Spacer as SP
+ tmp=(B/'source'/'.p2.md'); tmp.write_text(part2.strip())
+ for s_ in [round(12.4-x*.25,3) for x in range(13)]:
+  story,t,_=build_story(tmp,s_,s_*1.23,s_*0.55,False)
+  while story and type(story[0]).__name__=='Paragraph' and story[0].style.fontSize==20:
+   del story[0]
+   if story and type(story[0]).__name__=='Spacer': del story[0]
+   break
+  d=SimpleDocTemplate(str(O/('two-'+md.stem+'.pdf')),pagesize=(W,H),topMargin=BANNER_H+34,bottomMargin=48,leftMargin=34,rightMargin=34)
+  h=furniture(2,'Sponsorship & Co-Travel',True)
+  d.build([SP(1,1),PageBreak()]+story,onFirstPage=h,onLaterPages=h)
+  if len(PdfReader(str(O/('two-'+md.stem+'.pdf'))).pages)==2: break
+ from pypdf import PdfReader as PR, PdfWriter as PW
+ w=PW(); w.add_page(PR(str(O/('.p1-reformat-v3.pdf'))).pages[0]); w.add_page(PR(str(O/('two-'+md.stem+'.pdf'))).pages[1])
+ w.write(str(O/(md.stem+'-reformat-v3.pdf'))); (O/('two-'+md.stem+'.pdf')).unlink()
+ print(md.stem,'two-page build complete')
 for p in sorted((B/'source').glob('*.md')):
- if p.stem not in SKIP:render(p)
+ if p.stem not in SKIP:
+  if '<!-- pagebreak -->' in p.read_text(): render_two(p)
+  else: render(p)
+
